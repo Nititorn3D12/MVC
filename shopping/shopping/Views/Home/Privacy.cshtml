@@ -1,0 +1,55 @@
+﻿<style>
+    img {
+        display: block; /* ทำให้ภาพเป็น block element เพื่อให้สามารถกำหนด margin:auto ได้ */
+        margin: auto; /* ทำให้ภาพอยู่ตรงกลาง */
+    }
+</style>
+<style>
+    body {
+        background-color: beige;
+        color: black; /* เปลี่ยนสีข้อความให้ต่างกันไปกับพื้นหลัง */
+    }
+</style>
+<style>
+    h1 {
+        text-align: center; 
+    }
+
+    p {
+        text-align: center;
+    }
+
+    img[src*="aa.png"] {
+        max-width: 300px;
+        height: auto;
+    }
+
+    img[src*="bb.png"] {
+        max-width: 300px;
+        height: auto;
+    }
+
+    img[src*="cc.png"] {
+        max-width: 300px;
+        height: auto;
+    }
+
+    img[src*="gggg.png"] {
+        max-width: 250px;
+        height: auto;
+    }
+</style>
+
+@{
+    ViewData["Title"] = "Publisher";
+}
+<img src="@Url.Content("~/Content/Images/gggg.png")" alt="Logo">
+<div class="text-center">
+<img src="@Url.Content("~/Content/Images/aa.png")" alt="Logo">
+<p>6421650708 นายนิติธร ดอนเส เลขที่ 5</p>
+    <img src="@Url.Content("~/Content/Images/cc.png")" alt="Logo">
+    <p>6421653243 นายอภิณัฐ สืบนาม เลขที่ 23</p>
+<img src="@Url.Content("~/Content/Images/bb.png")" alt="Logo">
+    <p>6421656587 นางสาวณัฏฐชา ยะเปียง เลขที่ 24</p>
+
+</div>
